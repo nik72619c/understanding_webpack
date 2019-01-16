@@ -1,6 +1,7 @@
 const webpack=require('webpack');
 module.exports={
     entry:'./app.js',
+    devtool: 'inline-source-map',
     output: {
         path: __dirname,
         filename: 'bundle.js'
