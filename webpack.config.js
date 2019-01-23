@@ -8,8 +8,14 @@ module.exports={
     devtool: 'inline-source-map',
     output: {
         path: __dirname,
-        filename: '[name].bundle.js'
+        filename: '[name].bundle.js',
+        chunkFilename: '[name].bundle.js',
     },
+    optimization: {
+           splitChunks: {
+             chunks: 'all'
+           }
+         },
     devServer: {
       // Don't refresh if hot loading fails. Good while
       // implementing the client interface.
