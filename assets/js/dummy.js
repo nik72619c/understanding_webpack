@@ -1,5 +1,5 @@
 module.exports=function doSomething(){
-    let element=document.createElement('p');
-    element.innerHTML="changed value added!";
-    document.getElementsByTagName('body')[0].appendChild(element);
+    let element1=document.createElement('p');
+    element1.innerHTML="changed value added!";
+    document.getElementsByTagName('body')[0].appendChild(element1);
 }

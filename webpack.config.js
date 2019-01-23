@@ -1,10 +1,14 @@
 const webpack=require('webpack');
 module.exports={
-    entry:'./app.js',
+    entry:{
+      index: './app.js',
+      another: './assets/js/dummy.js',
+      file1: './assets/js/file1.js'
+    },
     devtool: 'inline-source-map',
     output: {
         path: __dirname,
-        filename: 'bundle.js'
+        filename: '[name].bundle.js'
     },
     devServer: {
       // Don't refresh if hot loading fails. Good while
@@ -41,4 +45,4 @@ module.exports={
       new webpack.HotModuleReplacementPlugin(),
     ]
    
-}
+};
